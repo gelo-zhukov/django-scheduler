@@ -25,8 +25,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="event",
             name="description",
-            field=models.TextField(blank=True, default="", verbose_name="description"),
-            preserve_default=False,
+            field=models.TextField(blank=True, verbose_name="description"),
         ),
         migrations.AlterField(
             model_name="eventrelation",
@@ -39,8 +38,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="occurrence",
             name="description",
-            field=models.TextField(blank=True, default="", verbose_name="description"),
-            preserve_default=False,
+            field=models.TextField(blank=True, verbose_name="description"),
         ),
         migrations.AlterField(
             model_name="occurrence",
@@ -53,7 +51,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="rule",
             name="params",
-            field=models.TextField(blank=True, default="", verbose_name="params"),
-            preserve_default=False,
+            field=models.TextField(blank=True, verbose_name="params"),
         ),
     ]
