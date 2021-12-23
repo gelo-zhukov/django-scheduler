@@ -95,7 +95,7 @@ class Migration(migrations.Migration):
                 ("title", models.CharField(max_length=255, verbose_name="title")),
                 (
                     "description",
-                    models.TextField(blank=True, null=True, verbose_name="description"),
+                    models.TextField(blank=True, verbose_name="description"),
                 ),
                 (
                     "created_on",
@@ -199,7 +199,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "description",
-                    models.TextField(blank=True, null=True, verbose_name="description"),
+                    models.TextField(blank=True, verbose_name="description"),
                 ),
                 ("start", models.DateTimeField(verbose_name="start")),
                 ("end", models.DateTimeField(verbose_name="end")),
@@ -264,7 +264,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "params",
-                    models.TextField(blank=True, null=True, verbose_name="params"),
+                    models.TextField(blank=True, verbose_name="params"),
                 ),
             ],
             options={"verbose_name_plural": "rules", "verbose_name": "rule"},
